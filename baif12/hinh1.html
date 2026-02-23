@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+.form-container form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.form-input:focus {
+    outline: 2px solid #007bff;
+}
+
+.radio-input:checked {
+    background-color: #007bff;
+}
+
+.checkbox-input:checked {
+    accent-color: #007bff;
+}
+
+.form-textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.form-textarea:focus {
+    outline: 2px solid #007bff;
+}
+
+.submit-btn {
+    width: 25%;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.submit-btn:focus {
+    outline: yellow;
+}
+
+.submit-btn:active {
+    background-color: #4ff4a2;
+}
+</style>
+</head>
+<div class="form-container">
+    <form >
+        
+        <div class="form-group">
+            <label for="hoten" class="form-label">Họ tên:</label>
+            <input type="text" id="hoten" name="hoten" class="form-input">
+        </div>
+
+        <div class="form-group">
+            <label for="lop" class="form-label">Lớp:</label>
+            <input type="text" id="lop" name="lop" class="form-input">
+        </div>
+
+        <div class="form-group">
+            <p class="form-label">Chọn định hướng môn Tin học mà bạn đang học:</p>
+            <div class="radio-group">
+                <input type="radio" id="khoahocmaytinh" name="dinhhuong" value="Khoa học máy tính" class="radio-input" checked>
+                <label for="khoahocmaytinh" class="radio-label">Khoa học máy tính</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="tinhocungdung" name="dinhhuong" value="Tin học ứng dụng" class="radio-input">
+                <label for="tinhocungdung" class="radio-label">Tin học ứng dụng</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p class="form-label">Chọn câu lạc bộ bạn đang tham gia:</p>
+            <div class="checkbox-group">
+                <input type="checkbox" id="clbbongda" name="caulacbo" value="CLB Bóng đá" class="checkbox-input" checked>
+                <label for="clbbongda" class="checkbox-label">CLB Bóng đá</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="clbvovinam" name="caulacbo" value="CLB Vovinam" class="checkbox-input" checked>
+                <label for="clbvovinam" class="checkbox-label">CLB Vovinam</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="clbvannghe" name="caulacbo" value="CLB Văn nghệ" class="checkbox-input">
+                <label for="clbvannghe" class="checkbox-label">CLB Văn nghệ</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="ykien" class="form-label">Nhập ý kiến đóng góp của bạn:</label>
+            <textarea id="ykien" name="ykien" class="form-textarea" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Gửi</button>
+        </div>
+
+    </form>
+</div>
+    <a href="../index.html">Quay lại</a>
+</html>
